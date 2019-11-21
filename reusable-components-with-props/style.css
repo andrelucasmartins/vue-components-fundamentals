@@ -1,0 +1,6 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+body{
+    background: lightblue url(https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1455120215000/photosp/4f67c8f2-6f3c-42c3-9984-49f2b3d87337/stock-photo-blue-white-blue-background-coffee-cup-tasty-cappuccino-light-blue-tiffany-4f67c8f2-6f3c-42c3-9984-49f2b3d87337.jpg) repeat-y;
+    background-size: cover
+}

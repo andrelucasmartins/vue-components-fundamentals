@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reusable Components with Props</title>
+</head>
+<body>
+    <div id="app" class="container mx-auto py-6">
+        <div class="content">
+            <h1 class="title text-center">Coffee Plans</h1>
+            <h2 class="subtitle font-weight-lighter">
+                We travel the world to source the very best single origin coffee for you
+            </h2>
+
+            <plan name="The Hacker"></plan>
+            <plan name="The Single"></plan>
+            <plan name="The Currious"></plan>
+            <plan name="The Addict"></plan>
+
+        </div>
+    </div>
+    <script type="text/x-template" id="plan-template">
+        <div class="plan card my-3">
+            <div class="description card-body">
+                <span class="title card-title">
+                    {{name}}
+                </span>
+            </div>
+        </div>
+    </script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
