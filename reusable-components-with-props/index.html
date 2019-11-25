@@ -12,17 +12,19 @@
             <h1 class="title text-center">Coffee Plans</h1>
             <h2 class="subtitle font-weight-lighter">
                 We travel the world to source the very best single origin coffee for you
-            </h2>
-
-            <plan name="The Hacker"></plan>
-            <plan name="The Single"></plan>
-            <plan name="The Currious"></plan>
-            <plan name="The Addict"></plan>
-
+            </h2>            
+            <plan-picker></plan-picker>
         </div>
     </div>
+
+    <script type="text/x-template" id="plan-picker-template">
+        <div class="plans">
+            <plan v-for="plan in plans" :name="plan" @select="selectPlan" :selectedPlan="selectedPlan"></plan>
+        </div>
+    </script>
+
     <script type="text/x-template" id="plan-template">
-        <div class="plan card my-3">
+        <div @click="select" class="plan card my-3" :class="{'active-plan': isSelected}">
             <div class="description card-body">
                 <span class="title card-title">
                     {{name}}
